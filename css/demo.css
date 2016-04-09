@@ -1,0 +1,30 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 22px;
+  background: #0288D1;
+  color: #fff; }
+
+div[class^="col"] {
+  background: #eee;
+  padding: 5px;
+  border: solid 1px #ccc;
+  color: #444; }
+  div[class^="col"] div[class^="col"] {
+    background: #ddd; }
+
+h1 {
+  font-family: 'Oleo Script', cursive;
+  font-weight: 400;
+  color: #fff;
+  font-size: 3em; }
+
+.flex-container {
+  max-width: 980px; }
+
+.class {
+  background: #ddd;
+  border-radius: 5px;
+  color: #333;
+  padding: 2px 8px; }
+
+/*# sourceMappingURL=demo.css.map */

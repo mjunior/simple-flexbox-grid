@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>A Simple Grid based on flexbox </title>
+	<link href='https://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+	
+	<div class="flex-container column-center itens-center">
+		<h1>Flexbox Grid</h1>
+	</div>
+
+	<div class="flex-container">
+		<p>Para utilizar o grid você deve envolve-lo com as classes <span class="class">.flex-container</span> e <span class="class">.grid</span>. O <span class="class"> .grid</span> é composto por 12 colunas, caso ultrapasse este limite o layout será quebrado.</p>
+	</div>
+
+	<div class="flex-container grid">
+		<div class="col-12">
+			<script src="https://gist.github.com/mjsjunior/993441ce91afbb0ee8fa43e51e3438d5.js"></script>
+		</div>
+	</div>
+
+	<div class="flex-container grid">
+		<div class="col-1">
+			<h2>col-1</h2>
+		</div>
+		<div class="col-11">
+			<h2>col-11</h2>
+		</div>
+	</div>
+
+	<div class="flex-container grid">
+		<div class="col-2">
+			<h2>col-2</h2>
+		</div>
+		
+		<div class="col-10">
+			<h2>col-10</h2>
+		</div>
+	</div>
+
+	<div class="flex-container grid">
+		<div class="col-3">
+			<h2>col-3</h2>
+		</div>
+		
+		<div class="col-9">
+			<h2>col-9</h2>
+		</div>
+	</div>
+
+	<div class="flex-container grid">
+		<div class="col-4">
+			<h2>col-4</h2>
+		</div>
+		
+		<div class="col-8">
+			<h2>col-8</h2>
+		</div>
+	</div>
+
+	<div class="flex-container grid">
+		<div class="col-5">
+			<h2>col-5</h2>
+		</div>
+		
+		<div class="col-7">
+			<h2>col-7</h2>
+		</div>
+	</div>
+	
+	<div class="flex-container grid">
+		<p>Colunas podem ter alturas diferentes, para que todas tenham sempre tamanhos iguais você deve adicionar a classe <span class="class">.itens-all</span> junto ao seu container <span class="class">.grid</span> assim todas as colunas iram se igualar ao tamanho da maior.</p>
+	</div>
+	
+	<div class="flex-container grid">
+		<script src="https://gist.github.com/mjsjunior/fe1d3dceca8221dc2d58c59771765a46.js"></script>
+	</div>
+
+	<div class="flex-container grid column-center itens-all">
+		<div class="col-6">
+			<h2>col-6</h2>
+		</div>
+		
+		<div class="col-6">
+			<h2>Col-6</h2>
+			<div class="flex-container grid">
+				<div class="col-6">
+					<h2>col-6</h2>
+					<p>Lorem ipsum dolor sit amet.</p>
+					<p>Lorem ipsum dolor sit amet.</p>
+					<p>Lorem ipsum dolor sit amet.</p>
+				</div>
+				<div class="col-6">
+					<h2>col-6</h2>
+					<p>Lorem ipsum dolor sit amet.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>

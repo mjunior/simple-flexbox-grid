@@ -1,0 +1,123 @@
+*{box-sizing: border-box;}
+.flex-container{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    margin:auto;
+    margin-bottom: 15px;
+
+	&.grid{
+		align-items: flex-start;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content:flex-start;
+	}
+
+	    &.row{
+			flex-direction: row;
+	    }
+	    &.row-reverse{
+			flex-direction: row-reverse;
+	    }
+	    &.column{
+			flex-direction: column;
+	    }
+	    &.column-reverse{
+			flex-direction: column-reverse;
+	    }
+	    &.wrap{
+	    	 flex-wrap: wrap;
+	    }
+	    &.no-wrap{
+	    	 flex-wrap: nowrap;
+	    }
+	    &.wrap-reverse{
+	    	 flex-wrap: wrap-reverse;
+	    }
+	    /*
+			Alinhamento dos itens no eixo x; main-axis
+	    */
+	    &.column-start{
+	    	justify-content:flex-start;
+	    }
+	    &.column-end{
+	    	justify-content:flex-end;
+	    }
+	    &.column-center{
+			justify-content:center;
+	    }
+	    &.column-between{
+			justify-content:space-between;
+	    }
+	    &.column-around{
+			justify-content:space-around;
+	    }
+
+	    /* Alinhamento dos itens no eixo y;cross-axis */
+
+	    &.itens-all{
+	    	align-items: stretch;
+	    }
+	    &.itens-start{
+	    	align-items: flex-start;
+	    }
+	    &.itens-end{
+	    	align-items: flex-end;
+	    }
+	    &.itens-center{
+	    	align-items: center;
+	    }
+	    &.itens-baseline{
+	    	align-items:baseline;
+	    }
+
+	    /*Alinhamento das linhas no eixo y;cross-axis;
+	    
+	    Só tem efeito com 2 ou mais linhas*/
+
+	    &.row-all{
+	    	align-content:stretch;
+	    }
+	    &.row-start{
+	    	align-content:flex-start;
+	    }
+	    &.row-end{
+	    	align-content:flex-end;
+	    }
+	    &.row-center{
+	    	align-content:center;
+	    }
+	    &.row-between{
+	    	align-content:space-between;
+	    }
+	    &.row-around{
+	    	align-content:space-around;
+	    }
+	
+    /* Configurações dos itens */
+	@for $i from 1 through $total-order {
+	  .order-#{$i} {order:#{$i}}
+	}
+
+	@for $i from 1 through $total-order {
+	  .grow-#{$i} {flex-grow:#{$i}}
+	}
+
+	@for $i from 1 through $total-shrink {
+	  .shrink-#{$i} {flex-shrink:#{$i}}
+	}
+
+	div[class^="col"] {
+	  &:last-of-type {
+	    margin-right: 0;
+	  }
+	  
+	}
+
+	@for $i from 1 through $grid-columns {
+	  .col-#{$i} {
+          $total: 100% * $i / $grid-columns;
+          flex-basis: calc(#{$total});
+   	 	}
+	}
+
+}
