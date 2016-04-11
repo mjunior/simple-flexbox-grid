@@ -36,88 +36,223 @@
 	    /*
 			Alinhamento dos itens no eixo x; main-axis
 	    */
-	    &.column-start{
+	    &.column-sm-start{
 	    	justify-content:flex-start;
 	    }
-	    &.column-end{
+	    &.column-sm-end{
 	    	justify-content:flex-end;
 	    }
-	    &.column-center{
+	    &.column-sm-center{
 			justify-content:center;
 	    }
-	    &.column-between{
+	    &.column-sm-between{
 			justify-content:space-between;
 	    }
-	    &.column-around{
+	    &.column-sm-around{
 			justify-content:space-around;
+	    }
+
+	    @media #{screen-md}{
+		    &.column-md-start{
+		    	justify-content:flex-start;
+		    }
+		    &.column-md-end{
+		    	justify-content:flex-end;
+		    }
+		    &.column-md-center{
+				justify-content:center;
+		    }
+		    &.column-md-between{
+				justify-content:space-between;
+		    }
+		    &.column-md-around{
+				justify-content:space-around;
+		    }	
+	    }
+
+	    @media #{screen-lg}{
+		    &.column-lg-start{
+		    	justify-content:flex-start;
+		    }
+		    &.column-lg-end{
+		    	justify-content:flex-end;
+		    }
+		    &.column-lg-center{
+				justify-content:center;
+		    }
+		    &.column-lg-between{
+				justify-content:space-between;
+		    }
+		    &.column-lg-around{
+				justify-content:space-around;
+		    }	
 	    }
 
 	    /* Alinhamento dos itens no eixo y;cross-axis */
 
-	    &.itens-all{
+	    &.itens-sm-all{
 	    	align-items: stretch;
 	    }
-	    &.itens-start{
+	    &.itens-sm-start{
 	    	align-items: flex-start;
 	    }
-	    &.itens-end{
+	    &.itens-sm-end{
 	    	align-items: flex-end;
 	    }
-	    &.itens-center{
+	    &.itens-sm-center{
 	    	align-items: center;
 	    }
-	    &.itens-baseline{
+	    &.itens-sm-baseline{
 	    	align-items:baseline;
+	    }
+
+	    @media #{screen-md}{
+		    &.itens-md-all{
+		    	align-items: stretch;
+		    }
+		    &.itens-md-start{
+		    	align-items: flex-start;
+		    }
+		    &.itens-md-end{
+		    	align-items: flex-end;
+		    }
+		    &.itens-md-center{
+		    	align-items: center;
+		    }
+		    &.itens-md-baseline{
+		    	align-items:baseline;
+		    }
+	    }
+
+
+	    @media #{screen-lg}{
+		    &.itens-lg-all{
+		    	align-items: stretch;
+		    }
+		    &.itens-lg-start{
+		    	align-items: flex-start;
+		    }
+		    &.itens-lg-end{
+		    	align-items: flex-end;
+		    }
+		    &.itens-lg-center{
+		    	align-items: center;
+		    }
+		    &.itens-lg-baseline{
+		    	align-items:baseline;
+		    }
 	    }
 
 	    /*Alinhamento das linhas no eixo y;cross-axis;
 	    
 	    Só tem efeito com 2 ou mais linhas*/
 
-	    &.row-all{
+	    &.row-sm-all{
 	    	align-content:stretch;
 	    }
-	    &.row-start{
+	    &.row-sm-start{
 	    	align-content:flex-start;
 	    }
-	    &.row-end{
+	    &.row-sm-end{
 	    	align-content:flex-end;
 	    }
-	    &.row-center{
+	    &.row-sm-center{
 	    	align-content:center;
 	    }
-	    &.row-between{
+	    &.row-sm-between{
 	    	align-content:space-between;
 	    }
-	    &.row-around{
+	    &.row-sm-around{
 	    	align-content:space-around;
 	    }
+
+		
+	    @media #{screen-md}{
+		    &.row-sm-all{
+		    	align-content:stretch;
+		    }
+		    &.row-sm-start{
+		    	align-content:flex-start;
+		    }
+		    &.row-sm-end{
+		    	align-content:flex-end;
+		    }
+		    &.row-sm-center{
+		    	align-content:center;
+		    }
+		    &.row-sm-between{
+		    	align-content:space-between;
+		    }
+		    &.row-sm-around{
+		    	align-content:space-around;
+		    }
+	    }
+
+
+
 	
-    /* Configurações dos itens */
-	@for $i from 1 through $total-order {
-	  .order-#{$i} {order:#{$i}}
-	}
+	    /* Configurações dos itens */
+		@for $i from 1 through $total-order {
+		  .order-#{$i} {order:#{$i}}
+		}
 
-	@for $i from 1 through $total-order {
-	  .grow-#{$i} {flex-grow:#{$i}}
-	}
+		@for $i from 1 through $total-order {
+		  .grow-#{$i} {flex-grow:#{$i}}
+		}
 
-	@for $i from 1 through $total-shrink {
-	  .shrink-#{$i} {flex-shrink:#{$i}}
-	}
-
-	div[class^="col"] {
-	  &:last-of-type {
-	    margin-right: 0;
-	  }
-	  
-	}
-
+		@for $i from 1 through $total-shrink {
+		  .shrink-#{$i} {flex-shrink:#{$i}}
+		}
+	
 	@for $i from 1 through $grid-columns {
-	  .col-#{$i} {
+	 	.col-sm-#{$i} {
           $total: 100% * $i / $grid-columns;
           flex-basis: calc(#{$total});
    	 	}
+	}
+
+	@media #{screen-md}{
+ 		@for $i from 1 through $grid-columns {
+		 	.col-md-#{$i} {
+	          $total: 100% * $i / $grid-columns;
+	          flex-basis: calc(#{$total});
+	   	 	}
+		}
+	}
+
+	@media #{$screen-lg}{
+ 		@for $i from 1 through $grid-columns {
+		 	.col-lg-#{$i} {
+	          $total: 100% * $i / $grid-columns;
+	          flex-basis: calc(#{$total});
+	   	 	}
+		}
+	}
+
+	/*Offset*/
+		@for $i from 1 through $grid-columns {
+	 	.col-sm-offset-#{$i} {
+          $total: 100% * $i / $grid-columns;
+          margin-left: calc(#{$total});
+   	 	}
+	}
+
+	@media #{screen-md}{
+ 		@for $i from 1 through $grid-columns {
+		 	.col-md-offset-#{$i} {
+	          $total: 100% * $i / $grid-columns;
+	          margin-left: calc(#{$total});
+	   	 	}
+		}
+	}
+
+	@media #{$screen-lg}{
+ 		@for $i from 1 through $grid-columns {
+		 	.col-lg-offset-#{$i} {
+	          $total: 100% * $i / $grid-columns;
+	          margin-left: calc(#{$total});
+	   	 	}
+		}
 	}
 
 }

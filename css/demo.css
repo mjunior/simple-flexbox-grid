@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Roboto', sans-serif;
   line-height: 22px;
   background: #0288D1;
@@ -18,8 +20,21 @@ h1 {
   color: #fff;
   font-size: 3em; }
 
+h2 {
+  font-size: 16px; }
+
+p {
+  margin: 7px 0; }
+
 .flex-container {
   max-width: 980px; }
+
+.fluid {
+  max-width: 100%; }
+
+.slide {
+  height: 110vh;
+  background: url("http://md.wearedevelopers.in/images/slide-1.jpg"); }
 
 .class {
   background: #ddd;
