@@ -3,43 +3,46 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
   line-height: 22px;
-  background: #0288D1;
-  color: #fff; }
-
-div[class^="col"] {
-  background: #eee;
-  padding: 5px;
-  border: solid 1px #ccc;
-  color: #444; }
-  div[class^="col"] div[class^="col"] {
-    background: #ddd; }
-
-h1 {
-  font-family: 'Oleo Script', cursive;
-  font-weight: 400;
-  color: #fff;
-  font-size: 3em; }
-
-h2 {
-  font-size: 16px; }
-
-p {
-  margin: 7px 0; }
+  background: #f9f9fa;
+  color: #3b3e42; }
 
 .flex-container {
-  max-width: 980px; }
+  max-width: 1200px; }
+  .flex-container.fluid {
+    max-width: 100% !important; }
 
-.fluid {
-  max-width: 100%; }
+.section-one {
+  color: #fff;
+  height: 100vh;
+  background: #0765d9;
+  text-align: center; }
+  .section-one h1 {
+    font-size: 128px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 131px; }
+  .section-one .description {
+    text-align: center; }
 
-.slide {
-  height: 110vh;
-  background: url("http://md.wearedevelopers.in/images/slide-1.jpg"); }
-
-.class {
-  background: #ddd;
-  border-radius: 5px;
-  color: #333;
-  padding: 2px 8px; }
+.section-two {
+  text-align: center;
+  padding-top: 20px; }
+  .section-two p {
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 400; }
+  .section-two .feature {
+    padding: 0 25px; }
+  .section-two .title {
+    margin-bottom: 30px; }
+  .section-two h1 {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 63px; }
+  .section-two h2 {
+    font-size: 40px;
+    font-weight: 300;
+    padding-top: 20px;
+    line-height: 43px; }
 
 /*# sourceMappingURL=demo.css.map */

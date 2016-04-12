@@ -1,54 +1,66 @@
+$main:#0765d9;
+$main-text:#3b3e42;
+$main-bg:#f9f9fa;
+
 
 body{
-		margin:0;
+	margin:0;
 	padding:0;
 	font-family: 'Roboto', sans-serif;
 	line-height: 22px;
-	background: #0288D1;
-	color:#fff;
-}
-div[class^="col"] {
-	background: #eee;
-	padding:5px;
-	border:solid 1px #ccc;
-	color:#444;
-	div[class^="col"] {
-		background: #ddd;
-	}
-		
-	
-}
+	background: $main-bg;
+	color:$main-text;
 
-h1{
-	font-family: 'Oleo Script', cursive;
-	font-weight: 400;
-	color:#fff;
-	font-size: 3em;
 }
-h2{
-	font-size: 16px;
-}
-
-p{
-	margin:7px 0;
-}
-
 .flex-container{
-	max-width: 980px;
+	max-width: 1200px;
+	&.fluid{
+		max-width: 100% !important;
+	}
 }
 
-.fluid{
-	max-width: 100%;
+.section-one{
+		color:#fff;
+	height: 100vh;
+	background: $main;
+	text-align: center;
+	h1{
+		font-size: 128px;
+		font-weight: 300;
+		margin: 0;
+		line-height: 131px;
+	}
+
+	.description{
+		text-align: center;
+	}
 }
 
-.slide{
-	height: 110vh;
-	background: url('http://md.wearedevelopers.in/images/slide-1.jpg');
-}
+.section-two{
+	p{
+		font-size: 21px;
+	    line-height: 28px;
+	    font-weight: 400;
+	}
+	.feature{
+		padding:0 25px;
+	}
+	.title{
+		margin-bottom: 30px;
+	}
+	h1{
+		font-size: 60px;
+		font-weight: 400;
+		line-height: 63px;
+		
+	}
 
-.class{
-	background: #ddd;
-	border-radius:5px;
-	color:#333;
-	padding:2px 8px;
+	h2{
+		font-size: 40px;
+		font-weight: 300;
+		padding-top:20px;
+		line-height: 43px; 
+	}
+	text-align: center;
+	padding-top:20px;
 }

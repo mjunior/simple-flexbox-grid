@@ -52,7 +52,7 @@
 			justify-content:space-around;
 	    }
 
-	    @media #{screen-md}{
+	    @media #{$screen-md}{
 		    &.column-md-start{
 		    	justify-content:flex-start;
 		    }
@@ -70,7 +70,7 @@
 		    }	
 	    }
 
-	    @media #{screen-lg}{
+	    @media #{$screen-lg}{
 		    &.column-lg-start{
 		    	justify-content:flex-start;
 		    }
@@ -106,7 +106,7 @@
 	    	align-items:baseline;
 	    }
 
-	    @media #{screen-md}{
+	    @media #{$screen-md}{
 		    &.itens-md-all{
 		    	align-items: stretch;
 		    }
@@ -125,7 +125,7 @@
 	    }
 
 
-	    @media #{screen-lg}{
+	    @media #{$screen-lg}{
 		    &.itens-lg-all{
 		    	align-items: stretch;
 		    }
@@ -167,7 +167,7 @@
 	    }
 
 		
-	    @media #{screen-md}{
+	    @media #{$screen-md}{
 		    &.row-sm-all{
 		    	align-content:stretch;
 		    }
@@ -207,15 +207,16 @@
 	@for $i from 1 through $grid-columns {
 	 	.col-sm-#{$i} {
           $total: 100% * $i / $grid-columns;
-          flex-basis: calc(#{$total});
+          width: calc(#{$total});
    	 	}
 	}
 
-	@media #{screen-md}{
+	@media #{$screen-md}{
  		@for $i from 1 through $grid-columns {
 		 	.col-md-#{$i} {
 	          $total: 100% * $i / $grid-columns;
-	          flex-basis: calc(#{$total});
+	          width: calc(#{$total});
+	          max-width: calc(#{$total});
 	   	 	}
 		}
 	}
@@ -224,20 +225,32 @@
  		@for $i from 1 through $grid-columns {
 		 	.col-lg-#{$i} {
 	          $total: 100% * $i / $grid-columns;
-	          flex-basis: calc(#{$total});
+	          width: calc(#{$total});
+	          max-width: calc(#{$total});
 	   	 	}
 		}
 	}
 
 	/*Offset*/
-		@for $i from 1 through $grid-columns {
+	@for $i from 1 through $grid-columns {
 	 	.col-sm-offset-#{$i} {
           $total: 100% * $i / $grid-columns;
           margin-left: calc(#{$total});
+        
    	 	}
 	}
 
-	@media #{screen-md}{
+		/*Offset*/
+	@for $i from 1 through $grid-columns {
+	 	.col-sm-r-offset-#{$i} {
+          $total: 100% * $i / $grid-columns;
+          margin-right: calc(#{$total});
+        
+   	 	}
+	}
+
+
+	@media #{$screen-md}{
  		@for $i from 1 through $grid-columns {
 		 	.col-md-offset-#{$i} {
 	          $total: 100% * $i / $grid-columns;
