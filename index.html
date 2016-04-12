@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,500,700' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="prism.css">
+	<script src="prism.js"></script>
 	<link rel="stylesheet" href="css/demo.css">
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.0.0/normalize.css">
 	<title>I s2 Flexbox</title>
@@ -18,7 +20,7 @@
 	<div class="flex-container grid itens-sm-end section-two">
 		<div class="col-sm-12 title">
 			<h1>Conheça um pouco mais!</h1>
-			<h2>Framework open source para facilitar seus grids em flexbox!</h2>
+			<h2>Framework open source para facilitar seu grid em flexbox!</h2>
 		</div>
 
 		<div class="col-sm-12 col-lg-4">
@@ -47,6 +49,7 @@
 			<h2>Não tenha medo de redimensionar sua tela e ver as alterações!</h2>
 		</div>
 		<div class="flex-container grid grid-demo">
+
 			<div class="col-sm-6 col-md-12 col-lg-4">
 				<div class="module">
 					<h2>Col-sm-6 col-md-4</h2>
@@ -67,10 +70,17 @@
 			</div>
 		</div>
 
+		<div class="flex-container grid column-sm-center" style="padding:20px 0;">
+			<div class="col-sm-12 col-md-9">
+				<h2 class="code-example-title">Um grid simples de 3 colunas.</h2>
+				<script src="https://gist.github.com/mjsjunior/993441ce91afbb0ee8fa43e51e3438d5.js"></script>
+			</div>
+		</div>
+
 
 		<div class="flex-container grid grid-demo itens-lg-start itens-md-center itens-sm-end">
 			<div class="col-sm-12 padding">
-				<h1>Alinhando colunas!</h1>
+				<h1>Alinhando colunas & Offset!</h1>
 				<p>Ao redimensionar a tela repare no posicionamento da coluna do meio</p>
 			</div>
 
@@ -94,10 +104,12 @@
 				</div>
 			</div>
 		</div>
-
-	
-		
-
+		<div class="flex-container grid column-sm-center">
+			<div class="col-sm-12 col-md-9">
+			<h2 class="code-example-title">Alinhando colunas verticalmente.</h2>
+			<script src="https://gist.github.com/mjsjunior/fe1d3dceca8221dc2d58c59771765a46.js"></script>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

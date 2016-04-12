@@ -17,7 +17,6 @@
   
   Só tem efeito com 2 ou mais linhas*/
   /* Configurações dos itens */
-  /*Offset*/
   /*Offset*/ }
   .flex-container.grid {
     align-items: flex-start;
@@ -279,30 +278,6 @@
     margin-left: calc(91.66667%); }
   .flex-container .col-sm-offset-12 {
     margin-left: calc(100%); }
-  .flex-container .col-sm-r-offset-1 {
-    margin-right: calc(8.33333%); }
-  .flex-container .col-sm-r-offset-2 {
-    margin-right: calc(16.66667%); }
-  .flex-container .col-sm-r-offset-3 {
-    margin-right: calc(25%); }
-  .flex-container .col-sm-r-offset-4 {
-    margin-right: calc(33.33333%); }
-  .flex-container .col-sm-r-offset-5 {
-    margin-right: calc(41.66667%); }
-  .flex-container .col-sm-r-offset-6 {
-    margin-right: calc(50%); }
-  .flex-container .col-sm-r-offset-7 {
-    margin-right: calc(58.33333%); }
-  .flex-container .col-sm-r-offset-8 {
-    margin-right: calc(66.66667%); }
-  .flex-container .col-sm-r-offset-9 {
-    margin-right: calc(75%); }
-  .flex-container .col-sm-r-offset-10 {
-    margin-right: calc(83.33333%); }
-  .flex-container .col-sm-r-offset-11 {
-    margin-right: calc(91.66667%); }
-  .flex-container .col-sm-r-offset-12 {
-    margin-right: calc(100%); }
   @media only screen and (min-width: 600px) {
     .flex-container .col-md-offset-1 {
       margin-left: calc(8.33333%); }

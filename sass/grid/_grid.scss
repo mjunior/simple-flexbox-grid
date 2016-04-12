@@ -239,16 +239,6 @@
    	 	}
 	}
 
-		/*Offset*/
-	@for $i from 1 through $grid-columns {
-	 	.col-sm-r-offset-#{$i} {
-          $total: 100% * $i / $grid-columns;
-          margin-right: calc(#{$total});
-        
-   	 	}
-	}
-
-
 	@media #{$screen-md}{
  		@for $i from 1 through $grid-columns {
 		 	.col-md-offset-#{$i} {

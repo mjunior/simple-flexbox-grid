@@ -78,6 +78,21 @@ body{
   background: #eee;
 }
 
+.code-example-title{
+    text-align: right;
+    margin: 0;
+    background: #F7F7F7;
+    padding: 10px;
+    color: #767676;
+    background-color: #f7f7f7;
+    border: 1px solid #CCCCCC;
+    font: 12px Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight: 800;
+    border-radius: 2px 2px 0 0 ;
+    border-bottom-color: rgba(0,0,0,0);
+    }
+
+
 .padding{
 	padding:15px;
 }
