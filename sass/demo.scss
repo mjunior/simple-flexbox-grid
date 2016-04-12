@@ -1,6 +1,4 @@
-$main:#0765d9;
-$main-text:#3b3e42;
-$main-bg:#f9f9fa;
+@import 'grid';
 
 
 body{
@@ -35,6 +33,19 @@ body{
 		text-align: center;
 	}
 }
+	.title{
+		margin-bottom: 30px;
+		h1{
+			font-size: 60px;
+			font-weight: 400;
+			line-height: 63px;
+		}
+		h2{
+			font-size: 40px;
+			font-weight: 300;
+			line-height: 43px; 
+		}
+	}
 
 .section-two{
 	p{
@@ -45,25 +56,32 @@ body{
 	.feature{
 		padding:0 25px;
 	}
-	.title{
-		margin-bottom: 30px;
-	}
-	h1{
-		font-size: 60px;
-		font-weight: 400;
-		line-height: 63px;
-		
-	}
 
-	h2{
-		font-size: 40px;
-		font-weight: 300;
-		padding-top:20px;
-		line-height: 43px; 
-	}
 	text-align: center;
 	padding-top:20px;
+	padding-bottom: 30px;
 }
+
+.section-three{
+	text-align: center;
+	padding-top: 20px;
+	background: #f9f9f9;
+	.grid-demo{
+		text-align: left;
+	}
+}
+
+.module {
+  margin: 10px;
+  padding:15px;
+  border-radius: 5px;
+  background: #eee;
+}
+
+.padding{
+	padding:15px;
+}
+
 
 @media only screen and (max-width: 599px){
 	.section-one{
@@ -77,8 +95,6 @@ body{
 			line-height: 131px;
 		}
 	}
-
-
 
 	.section-two{
 
@@ -106,4 +122,8 @@ body{
 			}
 		}
 	}
+}
+
+object{
+	display: none;
 }
