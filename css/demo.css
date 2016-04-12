@@ -45,4 +45,28 @@ body {
     padding-top: 20px;
     line-height: 43px; }
 
+@media only screen and (max-width: 599px) {
+  .section-one img {
+    max-width: 80px; }
+  .section-one h1 {
+    font-size: 90px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 131px; }
+
+  .section-two .feature {
+    padding-bottom: 80px; }
+  .section-two h1 {
+    font-size: 50px;
+    font-weight: 400;
+    padding-top: 20px;
+    line-height: 60px; }
+  .section-two h2 {
+    font-size: 35px;
+    font-weight: 300;
+    padding-top: 20px;
+    line-height: 43px; }
+  .section-two .feature img {
+    max-width: 200px; } }
+
 /*# sourceMappingURL=demo.css.map */
