@@ -4,6 +4,11 @@
     display: flex;
     margin:auto;
 
+	&.fluid{
+		max-width: 100% !important;
+		width: 100% !important;
+	}
+
 	&.grid{
 		align-items: flex-start;
 		flex-direction: row;
@@ -256,5 +261,4 @@
 	   	 	}
 		}
 	}
-
 }

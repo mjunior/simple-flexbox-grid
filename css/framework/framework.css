@@ -18,6 +18,9 @@
   Só tem efeito com 2 ou mais linhas*/
   /* Configurações dos itens */
   /*Offset*/ }
+  .flex-container.fluid {
+    max-width: 100% !important;
+    width: 100% !important; }
   .flex-container.grid {
     align-items: flex-start;
     flex-direction: row;
