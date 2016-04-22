@@ -1,46 +1,49 @@
 html{
-	font-family: 'Roboto', sans-serif;
 	p{
-		font-size: 14px;
-		line-height: 22px;
+		font-size: 1.4rem;
+		line-height: 2.2rem;
 	}
 }
 h1,h2,h3,h4,h5,h6{
 	font-weight: 400;
+	margin:2rem 0;
 }
 h1{
-	font-size: 50px;
-	line-height: 54px;
+	font-size: 4.0rem;
+	line-height: 4.4rem
 }
 h2{
-	font-size: 40px;
-	line-height: 44px;
+	font-size: 3rem;
+	line-height: 3.4rem;
 }
 h3{
-	font-size: 30px;
-	line-height: 34px;
+	font-size: 2.0rem;
+	line-height: 2.4rem;
 }
 h4{
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 1.8rem;
+	line-height: 2.2rem;
 }
 h5{
-	font-size: 18px;
-	line-height: 22px;
+	font-size: 1.6rem;
+	line-height: 1.8rem;
 }
+
+
+
 h6{
-	font-size: 14px;
-	line-height: 18px;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
 }
 
 blockquote{
-	font-size: 24px;
-	border-left: 5px solid $main;
-	padding: 8px 0 8px 15px;
+	font-size: 2.0rem;
+	border-left: 0.5rem solid $main;
+	padding: 0.8rem 0 .8rem 1rem;
 	margin-left: 5%;
 	.person{
-		font-size: 14px;
-		margin:10px 0;
+		font-size: 1.4rem;
+		margin:1.0rem 0;
 		color:$secondary-text;
 	}
 }

@@ -2,12 +2,14 @@
 .flex-container{
     display: -webkit-flex; /* Safari */
     display: flex;
+	max-width: 100% !important;
+	width: 100% !important;
     margin:auto;
+    padding:1rem;
 
-	&.fluid{
-		max-width: 100% !important;
-		width: 100% !important;
-	}
+    .flex-container{
+    	padding:0;
+    }
 
 	&.grid{
 		align-items: flex-start;
@@ -260,5 +262,13 @@
 	          margin-left: calc(#{$total});
 	   	 	}
 		}
+	}
+}
+
+@media #{$screen-sm}{
+
+	.flex-container{
+		max-width: 100%;
+		width: 100%;
 	}
 }

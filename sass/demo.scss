@@ -4,19 +4,18 @@
 body{
 	background: $main-bg;
 	color:$main-text;
-
 }
 
 .section-one{
-		color:#fff;
+	color:#fff;
 	height: 100vh;
 	background: $main;
 	text-align: center;
 	h1{
-		font-size: 128px;
+		font-size: 10rem;
 		font-weight: 300;
 		margin: 0;
-		line-height: 131px;
+		line-height: 13.1rem;
 	}
 
 	.description{
@@ -24,38 +23,37 @@ body{
 	}
 }
 
-.title{
-
-	h1{
-		font-size: 60px;
-		font-weight: 400;
-		line-height: 63px;
-	}
-	h2{
-		font-size: 40px;
-		font-weight: 300;
-		line-height: 43px; 
-	}
-}
-
 .section-two{
 	p{
-		font-size: 21px;
-	    line-height: 28px;
+		font-size: 1.6rem;
+	    line-height: 2rem;
 	    font-weight: 400;
 	}
 	.feature{
-		padding:0 25px;
+		margin-top:2.5rem;
+		padding:0 2.5rem;
+		img{
+			max-width: 170px;
+		}
+	}
+
+	@media #{$screen-md}{
+		.feature{
+			padding:0 2.5rem;
+			img{
+				max-width: 100%;
+			}
+		}
 	}
 
 	text-align: center;
-	padding-top:20px;
-	padding-bottom: 30px;
+	padding-top:2.0rem;
+	padding-bottom: 3.0rem;
 }
 
 .section-three{
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 2.0rem;
 	background: #fff;
 	.grid-demo{
 		text-align: left;
@@ -63,7 +61,7 @@ body{
 }
 
 .section-four{
-	padding: 20px;
+	padding: 2.0rem 0;
 	.title{
 		text-align: center;
 	}
@@ -71,91 +69,65 @@ body{
 }
 
 .section-five{
-	padding: 5px;
+	padding: .5rem 0;
 	.title{
 		text-align: center;
 	}
 }
 
-.module {
-  margin: 10px;
-  padding:15px;
-  border-radius: 5px;
-  background: #eee;
-}
+
+
+
 
 .code-example-title{
     text-align: right;
     margin: 0;
     background: #F7F7F7;
-    padding: 10px;
+    padding: 1.0rem;
     color: #767676;
     background-color: #f7f7f7;
-    border: 1px solid #CCCCCC;
-    font: 12px Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    border: .1rem solid #CCCCCC;
+    font: 1.2rem Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 800;
-    border-radius: 2px 2px 0 0 ;
+    border-radius: .2rem .2rem 0 0 ;
     border-bottom-color: rgba(0,0,0,0);
 }
 
 h1,h2,h3,h4,h5,h6{
 	span{
-		display: inline-block;
 		font-weight: 400;
-		font-size: 14px;
+		font-size: 1.4rem;
 		text-align: left;
-		margin-right: 30px;
+		margin-right: 3.0rem;
 		color:#aaa;
+		display: block;
 	}
 }
 
+.flex-container{
+	div[class^=".col-"]:first-child{
+		padding-left:0;
+	}
+
+
+	div[class^=".col-"]:first-child{
+		last-left:0;
+	}
+}
 
 .padding{
-	padding:15px;
-}
-
-
-@media only screen and (max-width: 599px){
-	.section-one{
-		img{
-			max-width: 80px;
-		}
-		h1{
-			font-size: 90px;
-			font-weight: 300;
-			margin: 0;
-			line-height: 131px;
-		}
-	}
-
-	.section-two{
-
-		.feature{
-			padding-bottom: 80px;
-		}
-		
-	h1{
-			font-size: 50px;
-			font-weight: 400;
-			padding-top:20px;
-			line-height: 60px; 
-		}
-
-		h2{
-			font-size: 35px;
-			font-weight: 300;
-			padding-top: 20px;
-			line-height: 43px; 
-		}
-
-		.feature{
-			img{
-				max-width: 200px;
-			}
-		}
-	}
+	padding:1.5rem;
 }
 
 object{
 	display: none;
+}
+
+div[class^="col-"]{
+	.module{
+	  margin: 1.0rem;
+	  padding:1.5rem;
+	  border-radius: .5rem;
+	  background: #eee;
+	}
 }
