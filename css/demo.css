@@ -16,6 +16,10 @@ body {
   /* Safari */
   display: flex;
   padding: 0px;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
     /*
 		Alinhamento dos itens no eixo x; main-axis
     */
@@ -25,16 +29,7 @@ body {
   Só tem efeito com 2 ou mais linhas*/
   /* Configurações dos itens */
   /*Offset*/ }
-  .row .row {
-    padding: 0; }
-  .row.grid {
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start; }
-  .row.row {
-    flex-direction: row; }
-  .row.row-reverse {
+  .row.reverse {
     flex-direction: row-reverse; }
   .row.column {
     flex-direction: column; }

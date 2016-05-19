@@ -4,22 +4,12 @@
     display: -webkit-flex; /* Safari */
     display: flex;
     padding:0px;
+	align-items: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:flex-start;
 
-    .row{
-    	padding:0;
-    }
-
-	&.grid{
-		align-items: flex-start;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content:flex-start;
-	}
-
-	    &.row{
-			flex-direction: row;
-	    }
-	    &.row-reverse{
+	    &.reverse{
 			flex-direction: row-reverse;
 	    }
 	    &.column{
