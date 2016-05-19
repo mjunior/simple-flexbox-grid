@@ -1,13 +1,11 @@
 *{box-sizing: border-box;}
-.flex-container{
+
+.row{
     display: -webkit-flex; /* Safari */
     display: flex;
-	max-width: 100% !important;
-	width: 100% !important;
-    margin:auto;
-    padding:1rem;
+    padding:0px;
 
-    .flex-container{
+    .row{
     	padding:0;
     }
 
@@ -42,54 +40,54 @@
 	    /*
 			Alinhamento dos itens no eixo x; main-axis
 	    */
-	    &.column-sm-start{
+	    &.x-sm-start{
 	    	justify-content:flex-start;
 	    }
-	    &.column-sm-end{
+	    &.x-sm-end{
 	    	justify-content:flex-end;
 	    }
-	    &.column-sm-center{
+	    &.x-sm-center{
 			justify-content:center;
 	    }
-	    &.column-sm-between{
+	    &.x-sm-between{
 			justify-content:space-between;
 	    }
-	    &.column-sm-around{
+	    &.x-sm-around{
 			justify-content:space-around;
 	    }
 
 	    @media #{$screen-md}{
-		    &.column-md-start{
+		    &.x-md-start{
 		    	justify-content:flex-start;
 		    }
-		    &.column-md-end{
+		    &.x-md-end{
 		    	justify-content:flex-end;
 		    }
-		    &.column-md-center{
+		    &.x-md-center{
 				justify-content:center;
 		    }
-		    &.column-md-between{
+		    &.x-md-between{
 				justify-content:space-between;
 		    }
-		    &.column-md-around{
+		    &.x-md-around{
 				justify-content:space-around;
 		    }	
 	    }
 
 	    @media #{$screen-lg}{
-		    &.column-lg-start{
+		    &.x-lg-start{
 		    	justify-content:flex-start;
 		    }
-		    &.column-lg-end{
+		    &.x-lg-end{
 		    	justify-content:flex-end;
 		    }
-		    &.column-lg-center{
+		    &.x-lg-center{
 				justify-content:center;
 		    }
-		    &.column-lg-between{
+		    &.x-lg-between{
 				justify-content:space-between;
 		    }
-		    &.column-lg-around{
+		    &.x-lg-around{
 				justify-content:space-around;
 		    }	
 	    }
@@ -213,7 +211,10 @@
 	@for $i from 1 through $grid-columns {
 	 	.col-sm-#{$i} {
           $total: 100% * $i / $grid-columns;
-          width: calc(#{$total});
+	          margin:0 $gutter $gutter $gutter;
+         	  width: calc(#{$total} - #{$gutter * 2});
+	          max-width: calc(#{$total} - #{$gutter * 2});
+	          flex-basis: calc(#{$total} - #{$gutter * 2});
    	 	}
 	}
 
@@ -221,8 +222,10 @@
  		@for $i from 1 through $grid-columns {
 		 	.col-md-#{$i} {
 	          $total: 100% * $i / $grid-columns;
-	          width: calc(#{$total});
-	          max-width: calc(#{$total});
+	          margin:0 $gutter $gutter $gutter;
+	          width: calc(#{$total} - #{$gutter * 2});
+	          max-width: calc(#{$total} - #{$gutter * 2});
+	          flex-basis: calc(#{$total} - #{$gutter * 2});
 	   	 	}
 		}
 	}
@@ -231,8 +234,10 @@
  		@for $i from 1 through $grid-columns {
 		 	.col-lg-#{$i} {
 	          $total: 100% * $i / $grid-columns;
-	          width: calc(#{$total});
-	          max-width: calc(#{$total});
+	          margin:0 $gutter $gutter $gutter;	          
+	          width: calc(#{$total} - #{$gutter * 2});
+	          max-width: calc(#{$total} - #{$gutter * 2});
+	          flex-basis: calc(#{$total} - #{$gutter * 2});
 	   	 	}
 		}
 	}
@@ -242,7 +247,6 @@
 	 	.col-sm-offset-#{$i} {
           $total: 100% * $i / $grid-columns;
           margin-left: calc(#{$total});
-        
    	 	}
 	}
 

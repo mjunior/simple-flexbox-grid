@@ -1,14 +1,5 @@
 *{box-sizing: border-box;}
-html{
-	font-size: 10px;
-}
 
 body{
 	font-family: 'Roboto', sans-serif;
-}
-
-@media #{$screen-md}{
-	html{
-		font-size: 12px;
-	}
 }
