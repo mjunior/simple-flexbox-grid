@@ -20,9 +20,9 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-    /*
-		Alinhamento dos itens no eixo x; main-axis
-    */
+  /*
+	Alinhamento dos itens no eixo x; main-axis
+  */
   /* Alinhamento dos itens no eixo y;cross-axis */
   /*Alinhamento das linhas no eixo y;cross-axis;
   
@@ -466,7 +466,9 @@ object {
 
 div[class^="col-"] .module {
   padding: 20px 0;
-  background: #11AFAD; }
+  background: #11AFAD;
+  text-align: center;
+  color: #fff; }
   div[class^="col-"] .module .module {
     background: rgba(0, 0, 0, 0.2); }
 

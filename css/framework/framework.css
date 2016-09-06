@@ -19,9 +19,9 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-    /*
-		Alinhamento dos itens no eixo x; main-axis
-    */
+  /*
+	Alinhamento dos itens no eixo x; main-axis
+  */
   /* Alinhamento dos itens no eixo y;cross-axis */
   /*Alinhamento das linhas no eixo y;cross-axis;
   
